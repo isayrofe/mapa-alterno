@@ -1,0 +1,18 @@
+  
+  <main class="main">
+  
+            <label>
+              <input type="checkbox" (change)="toggleMunicipalitiesVisibility()" [(ngModel)]="municipalitiesVisible">
+              Municipalities
+            </label>
+            <label>
+              <input type="checkbox" (change)="toggleBanquetasVisibility()" [(ngModel)]="banquetasVisible">
+              Banquetas
+            </label>
+  
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+    
+  </main>
+  

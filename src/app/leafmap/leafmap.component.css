@@ -1,0 +1,68 @@
+.spacer {
+  flex: 1;
+}
+
+.user-menu-container {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+mat-sidenav .entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+
+.dashboard-container {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+mat-drawer {
+    width: 200px;
+  }
+
+
+@media (max-width: 600px) {
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .example-sidenav-container {
+    flex: 1 0 auto;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .example-sidenav-container {
+    flex: 1 0 auto;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .example-sidenav-container {
+    flex: 1;
+  }
+}
+
+.user-menu-button {
+  margin-left: auto; 
+  margin-right: 16px; 
+}
+

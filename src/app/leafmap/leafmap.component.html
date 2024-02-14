@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+</mat-toolbar>
+
+<div class="dashboard-container">
+    <!-- Menú lateral (sidenav) -->
+    <mat-drawer-container class="sidenav-container" [autosize]="true">
+        <mat-drawer #drawer mode="side" opened>
+            <mat-toolbar>Menu</mat-toolbar>
+            <mat-nav-list>
+                <a mat-list-item routerLink="/mapa">Mapa</a>
+
+            </mat-nav-list>
+        </mat-drawer>
+
+        <mat-drawer-content>
+            <router-outlet></router-outlet>
+        </mat-drawer-content>
+
+    </mat-drawer-container>
+</div>
